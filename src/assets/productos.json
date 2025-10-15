@@ -1,0 +1,184 @@
+{
+	"productos": [
+		{
+			"id": 1,
+			"nombre": "Mesa de comedor industrial",
+			"descripcion": "Mesa rectangular de madera maciza y estructura de hierro negro, ideal para comedores amplios.",
+			"precio": 189000,
+			"avatar": "/images/mesa-comedor-industrial.webp",
+			"categoria": "Mesas",
+			"stock": 5,
+			"detalles": {
+				"medidas": "180x90x75 cm",
+				"materiales": "Madera de roble y hierro forjado",
+				"color": "Natural y negro mate",
+				"peso": "45 kg"
+			}
+		},
+		{
+			"id": 2,
+			"nombre": "Silla de hierro y madera rústica",
+			"descripcion": "Silla con asiento de madera reciclada y patas de hierro en acabado envejecido.",
+			"precio": 42000,
+			"avatar": "/images/silla-hierro-madera-rustica.jpg",
+			"categoria": "Sillas",
+			"stock": 12,
+			"detalles": {
+				"medidas": "45x45x85 cm",
+				"materiales": "Madera reciclada y hierro",
+				"color": "Marrón oscuro y negro envejecido",
+				"peso": "7 kg"
+			}
+		},
+		{
+			"id": 3,
+			"nombre": "Rack para TV moderno",
+			"descripcion": "Rack bajo con estructura de hierro y estantes de madera, estilo moderno e industrial.",
+			"precio": 99000,
+			"avatar": "/images/rack-madera-moderno.jpg",
+			"categoria": "Racks",
+			"stock": 8,
+			"detalles": {
+				"medidas": "160x40x55 cm",
+				"materiales": "Madera de pino y hierro pintado",
+				"color": "Nogal y negro",
+				"peso": "30 kg"
+			}
+		},
+		{
+			"id": 4,
+			"nombre": "Estantería modular de hierro",
+			"descripcion": "Estantería con 4 niveles, ideal para libros o decoración, estilo loft industrial.",
+			"precio": 132000,
+			"avatar": "/images/estanteria-modular-hierro.jpg",
+			"categoria": "Estanterías",
+			"stock": 4,
+			"detalles": {
+				"medidas": "180x80x35 cm",
+				"materiales": "Hierro y madera de eucalipto",
+				"color": "Natural y negro",
+				"peso": "35 kg"
+			}
+		},
+		{
+			"id": 5,
+			"nombre": "Banco de entrada",
+			"descripcion": "Banco de diseño simple con base de hierro y asiento de madera maciza.",
+			"precio": 61000,
+			"avatar": "/images/banco-madera-hierro.jpg",
+			"categoria": "Bancos",
+			"stock": 9,
+			"detalles": {
+				"medidas": "120x35x45 cm",
+				"materiales": "Madera de lapacho y hierro",
+				"color": "Natural oscuro y negro",
+				"peso": "15 kg"
+			}
+		},
+		{
+			"id": 6,
+			"nombre": "Mesa ratona cuadrada",
+			"descripcion": "Mesa ratona con estructura de hierro y tapa gruesa de madera maciza.",
+			"precio": 78000,
+			"avatar": "/images/mesa-ratona-cuadrada.jpg",
+			"categoria": "Mesas ratonas",
+			"stock": 6,
+			"detalles": {
+				"medidas": "90x90x40 cm",
+				"materiales": "Madera de paraíso y hierro",
+				"color": "Miel y negro",
+				"peso": "20 kg"
+			}
+		},
+		{
+			"id": 7,
+			"nombre": "Biblioteca industrial",
+			"descripcion": "Amplia biblioteca de hierro con estantes de madera gruesa, ideal para espacios grandes.",
+			"precio": 175000,
+			"avatar": "/images/biblioteca-industrial.jpg",
+			"categoria": "Bibliotecas",
+			"stock": 3,
+			"detalles": {
+				"medidas": "200x100x35 cm",
+				"materiales": "Madera de petiribí y hierro pintado",
+				"color": "Natural y negro mate",
+				"peso": "50 kg"
+			}
+		},
+		{
+			"id": 8,
+			"nombre": "Butaca baja con estructura de hierro",
+			"descripcion": "Butaca de diseño contemporáneo con asiento de madera curvada y base metálica.",
+			"precio": 56000,
+			"avatar": "/images/butaca-baja-hierro.jpg",
+			"categoria": "Butacas",
+			"stock": 10,
+			"detalles": {
+				"medidas": "60x60x70 cm",
+				"materiales": "Madera laminada y hierro tubular",
+				"color": "Nogal claro y negro",
+				"peso": "10 kg"
+			}
+		},
+		{
+			"id": 9,
+			"nombre": "Perchero de pie industrial",
+			"descripcion": "Perchero de pie con base de hierro y ganchos de madera torneada, ideal para entradas.",
+			"precio": 38000,
+			"avatar": "/images/perchero-industrial.png",
+			"categoria": "Percheros",
+			"stock": 7,
+			"detalles": {
+				"medidas": "175x40x40 cm",
+				"materiales": "Hierro y madera de lenga",
+				"color": "Natural y negro",
+				"peso": "8 kg"
+			}
+		},
+		{
+			"id": 10,
+			"nombre": "Escritorio de trabajo robusto",
+			"descripcion": "Escritorio amplio con patas de hierro reforzado y tapa de madera maciza.",
+			"precio": 142000,
+			"avatar": "/images/escritorio-robusto.jpg",
+			"categoria": "Escritorios",
+			"stock": 5,
+			"detalles": {
+				"medidas": "140x70x75 cm",
+				"materiales": "Madera de guayubira y hierro industrial",
+				"color": "Natural oscuro y negro",
+				"peso": "40 kg"
+			}
+		},
+		{
+			"id": 11,
+			"nombre": "Mesa de luz industrial",
+			"descripcion": "Mesa de luz con cajón de madera y estructura metálica, estilo minimalista.",
+			"precio": 52000,
+			"avatar": "/images/mesa-luz-industrial.jpg",
+			"categoria": "Mesas de luz",
+			"stock": 8,
+			"detalles": {
+				"medidas": "50x40x55 cm",
+				"materiales": "Madera de paraíso y hierro negro",
+				"color": "Miel y negro",
+				"peso": "12 kg"
+			}
+		},
+		{
+			"id": 12,
+			"nombre": "Taburete alto de bar",
+			"descripcion": "Taburete de bar con asiento de madera torneada y patas de hierro reforzado.",
+			"precio": 45000,
+			"avatar": "/images/taburete-bar.jpg",
+			"categoria": "Taburetes",
+			"stock": 14,
+			"detalles": {
+				"medidas": "35x35x75 cm",
+				"materiales": "Madera maciza y hierro",
+				"color": "Natural y negro",
+				"peso": "9 kg"
+			}
+		}
+	]
+}
