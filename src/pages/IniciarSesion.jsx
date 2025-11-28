@@ -1,29 +1,47 @@
-import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useAuthContext } from "../context/AuthContext";
 
-export default function IniciarSesion({ setIsAuthenticated, setUsuario }) {
+export default function IniciarSesion() {
+    const { iniciarSesion } = useAuthContext();
     const navigate = useNavigate();
     const ubicacion = useLocation();
 
-    const [formulario, setFormulario] = useState({ nombre: '', email: '' });
-
+    const [formulario, setFormulario] = useState({ nombre: "", email: "" });
 
     const manejarEnvio = (e) => {
         e.preventDefault();
-        if (formulario.nombre && formulario.email) {
-            setIsAuthenticated(true);
-            setUsuario(formulario);
+
+        // Verificar credenciales (admin/1234@admin)
+        if (formulario.nombre === "admin" && formulario.email === "1234@admin") {
+            // Guarda el email ingresado y pasa nombre para el token admin
+            localStorage.setItem("authEmail", formulario.email);
+            iniciarSesion("admin", formulario.email);
+            navigate("/dashboard");
+        }
+        // Lógica para usuarios normales - SOLO si NO es admin
+        else if (
+            formulario.nombre &&
+            formulario.email &&
+            formulario.nombre !== "admin"
+        ) {
+            // Guarda el email ingresado y pasa nombre para el token user
+            localStorage.setItem("authEmail", formulario.email);
+            iniciarSesion(formulario.nombre, formulario.email);
 
             // Si venía del carrito, redirige a pagar
             if (ubicacion.state?.carrito) {
-                navigate('/pagar', { state: { carrito: ubicacion.state.carrito } });
+                navigate("/pagar", { state: { carrito: ubicacion.state.carrito } });
             } else {
-                navigate('/productos');
+                navigate("/productos");
             }
         } else {
-            alert('Completa todos los datos');
+            alert(
+                "Credenciales de administrador incorrectas. Usa: admin / 1234@admin"
+            );
         }
     };
+
 
     return (
         <div className="flex justify-center flex-column text-center" style={{ padding: '3rem', paddingTop: '150px' }}>
@@ -49,6 +67,13 @@ export default function IniciarSesion({ setIsAuthenticated, setUsuario }) {
                     Cancelar
                 </button>
             </form>
+            <p style={{ marginTop: "20px", fontSize: "12px", color: "#666" }}>
+                <strong>Credenciales de prueba para Dashboard:</strong>
+                <br />
+                Nombre: admin
+                <br />
+                Email: 1234@admin
+            </p>
         </div>
     );
 }
